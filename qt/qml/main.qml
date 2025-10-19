@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import "./components"
 
 ApplicationWindow {
     visibility: Window.Maximized
@@ -8,13 +9,7 @@ ApplicationWindow {
     title: "Trade Analyst"
     header: TopToolBar {
         id: topToolBar
-    }
-
-    Connections {
-        target: topToolBar
-        onAboutClicked: {
-            console.log("About was clicked!")
-        }
+        objectName: "topToolBar"
     }
 
     Item {
