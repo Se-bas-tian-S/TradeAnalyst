@@ -1,6 +1,32 @@
 import QtQuick
+import QtQuick.Controls
 
-QtObject{
+Item{
+    property alias fileNewAction: fileNewAction
+    property alias fileOpenAction: fileOpenAction
+    property alias fileSaveAction: fileSaveAction
+    property alias fileSaveAsAction: fileSaveAsAction
+    property alias filePrintAction: filePrintAction
+    property alias fileExitAction: fileExitAction
+
+    property alias editUndoAction: editUndoAction
+    property alias editRedoAction: editRedoAction
+    property alias editCutAction: editCutAction
+    property alias editCopyAction: editCopyAction
+    property alias editPasteAction: editPasteAction
+    property alias editDeleteAction: editDeleteAction
+    property alias editFindAction: editFindAction
+    property alias editPrefsAction: editPrefsAction
+
+    property alias viewZoomInAction: viewZoomInAction
+    property alias viewZoomOutAction: viewZoomOutAction
+    property alias viewZoomResetAction: viewZoomResetAction
+    property alias viewStatusBarAction: viewStatusBarAction
+    property alias viewFullScreenAction: viewFullScreenAction
+
+    property alias helpContentsAction: helpContentsAction
+    property alias helpAboutAction: helpAboutAction
+    
     Action {
         id: fileNewAction
         text: "&New"

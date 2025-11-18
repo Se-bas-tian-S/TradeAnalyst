@@ -10,47 +10,47 @@ MenuBar {
     Menu {
         title: "&File"
 
-        MenuItem { action: actions.fileNewAction }
-        MenuItem { action: actions.fileOpenAction }
-        MenuItem { action: actions.fileSaveAction }
-        MenuItem { action: actions.fileSaveAsAction }
+        MenuItem { action: actions ? actions.fileNewAction : null }
+        MenuItem { action: actions ? actions.fileOpenAction : null }
+        MenuItem { action: actions ? actions.fileSaveAction : null }
+        MenuItem { action: actions ? actions.fileSaveAsAction : null }
         ToolSeparator {orientation: Qt.Horizontal}
-        MenuItem { action: actions.filePrintAction }
+        MenuItem { action: actions ? actions.filePrintAction : null }
         ToolSeparator {orientation: Qt.Horizontal}
-        MenuItem { action: actions.fileExitAction }
+        MenuItem { action: actions ? actions.fileExitAction : null }
     }
 
     Menu {
         title: "&Edit"
 
-        MenuItem { action: actions.editUndoAction }
-        MenuItem { action: actions.editRedoAction }
+        MenuItem { action: actions ? actions.editUndoAction : null }
+        MenuItem { action: actions ? actions.editRedoAction : null }
         ToolSeparator {orientation: Qt.Horizontal}
-        MenuItem { action: actions.editCutAction }
-        MenuItem { action: actions.editCopyAction }
-        MenuItem { action: actions.editPasteAction }
-        MenuItem { action: actions.editDeleteAction }
+        MenuItem { action: actions ? actions.editCutAction : null }
+        MenuItem { action: actions ? actions.editCopyAction : null }
+        MenuItem { action: actions ? actions.editPasteAction : null }
+        MenuItem { action: actions ? actions.editDeleteAction : null }
         ToolSeparator {orientation: Qt.Horizontal}
-        MenuItem { action: actions.editFindAction }
-        MenuItem { action: actions.editPrefsAction }
+        MenuItem { action: actions ? actions.editFindAction : null }
+        MenuItem { action: actions ? actions.editPrefsAction : null }
     }
 
     Menu {
         title: "&View"
 
-        MenuItem { action: actions.viewZoomInAction }
-        MenuItem { action: actions.viewZoomOutAction }
-        MenuItem { action: actions.viewZoomResetAction }
+        MenuItem { action: actions ? actions.viewZoomInAction : null }
+        MenuItem { action: actions ? actions.viewZoomOutAction : null }
+        MenuItem { action: actions ? actions.viewZoomResetAction : null }
         ToolSeparator {orientation: Qt.Horizontal}
-        MenuItem { action: actions.viewStatusBarAction }
-        MenuItem { action: actions.viewFullScreenAction }
+        MenuItem { action: actions ? actions.viewStatusBarAction : null }
+        MenuItem { action: actions ? actions.viewFullScreenAction : null }
     }
 
     Menu {
         title: "&Help"
 
-        MenuItem { action: actions.helpContentsAction }
+        MenuItem { action: actions ? actions.helpContentsAction : null }
         ToolSeparator {orientation: Qt.Horizontal}
-        MenuItem { action: actions.helpAboutAction }
+        MenuItem { action: actions ? actions.helpAboutAction : null }
     }
 }

@@ -3,6 +3,7 @@
     <qresource prefix="/">
         <file>qml/main.qml</file>
         <file>qml/components/TopToolBar.qml</file>
+        <file>qml/actions/GlobalActions.qml</file>
 
         </qresource>
 </RCC>

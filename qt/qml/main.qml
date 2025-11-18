@@ -13,9 +13,7 @@ ApplicationWindow {
     visibility: Window.Maximized
     title: "Trade Analyst"
 
-    globalActions {
-        id: globalActions
-    }
+    property var globalActions: GlobalActions {}
 
     menuBar: TopToolBar {
         id: topToolBar
