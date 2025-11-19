@@ -4,6 +4,8 @@
         <file>qml/main.qml</file>
         <file>qml/components/TopToolBar.qml</file>
         <file>qml/actions/GlobalActions.qml</file>
-
-        </qresource>
+        <file>qml/views/MainLayout.qml</file>
+        <file>qml/views/Sidebar.qml</file>
+        <file>qml/views/ChartView.qml</file>
+    </qresource>
 </RCC>

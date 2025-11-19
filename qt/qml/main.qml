@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import "./components"
 import "./actions"
+import "./views"
 
 ApplicationWindow {
     id: rootWindow
@@ -16,5 +17,9 @@ ApplicationWindow {
         id: topToolBar
         objectName: "topToolBar"
         actions: globalActions
+    }
+
+    MainLayout {
+        anchors.fill: parent
     }
 }
