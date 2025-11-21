@@ -1,5 +1,0 @@
-Compile resources:
-- pyside6-rcc qt/resources.qrc -o src/TradeAnalyst/resources.py
-
-Set local execution policy:
-- Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
