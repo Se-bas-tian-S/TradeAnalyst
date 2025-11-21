@@ -2,17 +2,17 @@ import QtQuick
 import QtQuick.Controls
 
 Item{
-    property alias fileNewAction: fileNewAction
+    property alias fileNewCsvAction: fileNewCsvAction
     Action {
-        id: fileNewAction
+        id: fileNewCsvAction
         text: "&New"
         shortcut: StandardKey.New
         onTriggered: backend.file.new_file()
     }
-    property alias fileOpenAction: fileOpenAction
+    property alias fileAddCsvAction: fileAddCsvAction
     Action {
-        id: fileOpenAction
-        text: "&Open..."
+        id: fileAddCsvAction
+        text: "&AddCSV..."
         shortcut: StandardKey.Open
         onTriggered: backend.file.open_file()
     }

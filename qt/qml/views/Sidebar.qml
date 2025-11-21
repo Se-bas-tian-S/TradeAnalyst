@@ -27,6 +27,14 @@ Pane {
             Layout.fillWidth: true
         }
 
+        ToolSeparator {
+            orientation: Qt.Horizontal
+            topPadding: 10
+            bottomPadding: 10
+            Layout.columnSpan: 2
+            Layout.fillWidth: true
+        }
+
         Label {
             text: "Plot Mode:"
         }

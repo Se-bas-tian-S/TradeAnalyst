@@ -6,8 +6,8 @@ MenuBar {
     Menu {
         title: "&File"
 
-        MenuItem { action: actions ? actions.fileNewAction : null }
-        MenuItem { action: actions ? actions.fileOpenAction : null }
+        MenuItem { action: actions ? actions.fileNewCsvAction : null }
+        MenuItem { action: actions ? actions.fileAddCsvAction : null }
         MenuItem { action: actions ? actions.fileSaveAction : null }
         MenuItem { action: actions ? actions.fileSaveAsAction : null }
         ToolSeparator {orientation: Qt.Horizontal}
