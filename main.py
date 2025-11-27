@@ -16,4 +16,6 @@ if __name__ == "__main__":
     if not engine.rootObjects():
         print("Failed to load Qml application")
         sys.exit(-1)
+    else :
+        print("App is working")
     sys.exit(app.exec())
